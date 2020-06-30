@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Suma{
+   public static void main(String args[]){
+      Scanner scanner = new Scanner(System.in);
+      int[] array = new int[10];
+      int sum = 0;
+      System.out.println("Elementele sunt:");
+      for (int i=0; i<10; i++)
+      {
+    	  array[i] = scanner.nextInt();
+      }
+      for( int num : array) {
+          sum = sum+num;
+      }
+      if sum > 50
+      System.out.println("Suma elementelor vectorului este mai mare decat 50");
+      else 
+      System.out.println("Suma elementelor vectorului este mai mica decat 50");
+      
+   }
+   
+}
