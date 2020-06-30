@@ -1,0 +1,41 @@
+public Complex(double real, double imag)
+	z=real+i*imag;
+    {
+        this.real = real;
+		this.imag = imag;
+	}
+	
+	public double real()
+	{
+		return this.real;
+	}
+	
+	
+	public double imag()
+	{
+		return this.imag;
+	}
+	
+	
+	public Complex add(Complex z)
+	{
+		return new Complex(
+				this.real + z.real(), this.imag + z.imag());
+	}
+	
+	
+	public Complex subtract(Complex z)
+	{
+		return new Complex(
+				this.real - z.real(), this.imag - z.imag());
+	}
+
+	
+	public boolean equals(Complex z)
+	{
+		if (this.real == z.real() || this.imag == z.imag())
+		{
+			return true;
+		}
+		return false;
+	}
